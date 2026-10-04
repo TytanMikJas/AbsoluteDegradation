@@ -1,6 +1,6 @@
 # AbsoluteDegradation: A Physics-Inspired Synthetic Film-Degradation Pipeline and Archival Film Restoration Benchmark
 
-**NeurIPS 2026, Evaluations and Datasets Track** · [Mikołaj Jastrzębski](https://www.mikjas.com), Dawid Glinkowski, Dawid Zieliński, Daniel Borkowski, Wojciech Kozłowski, Kamil Adamczewski · Wrocław University of Science and Technology
+**NeurIPS 2026, Evaluations and Datasets Track** · [Mikołaj Jastrzębski](https://www.mikjas.com), [Dawid Glinkowski](https://www.linkedin.com/in/dawid-glinkowski-444354224/), [Dawid Zieliński](https://www.linkedin.com/in/dawziel/), [Daniel Borkowski](https://www.linkedin.com/in/daniel-borkowski-/?isSelfProfile=false), Wojciech Kozłowski, Kamil Adamczewski · Wrocław University of Science and Technology
 
 [![arXiv](https://img.shields.io/badge/arXiv-2607.02131-b31b1b.svg)](https://arxiv.org/abs/2607.02131)
 [![Project page](https://img.shields.io/badge/Project-page-d9a441.svg)](https://www.mikjas.com/absolute-degradation)
