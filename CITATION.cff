@@ -3,6 +3,7 @@ message: "If you use AbsoluteDegradation, please cite the paper below."
 title: "AbsoluteDegradation: A Physics-Inspired Synthetic Film-Degradation Pipeline"
 type: software
 version: 1.0.0
+doi: 10.5281/zenodo.23621454
 license: MIT
 repository-code: "https://github.com/TytanMikJas/AbsoluteDegradation"
 url: "https://absolutecinema.absolutedegradation.workers.dev"
