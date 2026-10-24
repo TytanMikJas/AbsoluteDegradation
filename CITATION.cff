@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: "If you use AbsoluteDegradation, please cite the paper below."
+title: "AbsoluteDegradation: A Physics-Inspired Synthetic Film-Degradation Pipeline"
+type: software
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/TytanMikJas/AbsoluteDegradation"
+url: "https://absolutecinema.absolutedegradation.workers.dev"
+keywords:
+  - film restoration
+  - video restoration
+  - synthetic degradation
+  - archival film
+  - benchmark
+authors: &authors
+  - family-names: "Jastrzębski"
+    given-names: "Mikołaj"
+    email: "contact@mikjas.com"
+    orcid: "https://orcid.org/0009-0003-3526-935X"
+    affiliation: "Wrocław University of Science and Technology"
+  - family-names: "Glinkowski"
+    given-names: "Dawid"
+    email: "dawid.g.dg@gmail.com"
+    orcid: "https://orcid.org/0009-0008-4342-9663"
+    affiliation: "Wrocław University of Science and Technology"
+  - family-names: "Zieliński"
+    given-names: "Dawid"
+    email: "dawid.zielinski.ml@outlook.com"
+    orcid: "https://orcid.org/0009-0009-6181-7114"
+    affiliation: "Wrocław University of Science and Technology"
+  - family-names: "Borkowski"
+    given-names: "Daniel"
+    email: "d.a.borkowski@outlook.com"
+    orcid: "https://orcid.org/0009-0003-0757-4103"
+    affiliation: "Wrocław University of Science and Technology"
+  - family-names: "Kozłowski"
+    given-names: "Wojciech"
+    email: "wojciech.kozlowski@pwr.edu.pl"
+    orcid: "https://orcid.org/0009-0009-1532-4415"
+    affiliation: "Wrocław University of Science and Technology"
+  - family-names: "Adamczewski"
+    given-names: "Kamil"
+    email: "kamil.adamczewski@pwr.edu.pl"
+    orcid: "https://orcid.org/0000-0002-2917-4392"
+    affiliation: "Wrocław University of Science and Technology"
+preferred-citation:
+  type: conference-paper
+  title: "AbsoluteDegradation: A Physics-Inspired Synthetic Film-Degradation Pipeline and Archival Film Restoration Benchmark"
+  authors: *authors
+  collection-title: "Advances in Neural Information Processing Systems (NeurIPS), Evaluations and Datasets Track"
+  conference:
+    name: "40th Conference on Neural Information Processing Systems (NeurIPS 2026)"
+  year: 2026
+  url: "https://openreview.net/forum?id=gKunvq63KY"
+  identifiers:
+    - type: other
+      value: "arXiv:2607.02131"
+      description: "arXiv preprint"

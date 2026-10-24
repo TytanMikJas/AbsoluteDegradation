@@ -1,0 +1,14 @@
+valid_extensions:
+  - .png
+  - .jpg
+
+texture_skip_groups:
+  - "008"  # Pure noise textures
+
+threshold_args:
+  block_size: 21
+  C: 8
+
+
+raw_texture_path: ./data/noise_data
+texture_out_path: ./data/textures

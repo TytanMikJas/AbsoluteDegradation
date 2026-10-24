@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "absolute-degradation"
+version = "1.0.0"
+description = "A physics-inspired synthetic film-degradation pipeline for archival film restoration research (NeurIPS 2026, Evaluations and Datasets Track)."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Mikołaj Jastrzębski" },
+    { name = "Dawid Glinkowski" },
+    { name = "Dawid Zieliński" },
+    { name = "Daniel Borkowski" },
+    { name = "Wojciech Kozłowski" },
+    { name = "Kamil Adamczewski" },
+]
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "albumentations==2.0.8",
+    "hydra-core==1.3.2",
+    "numba>=0.63.0",
+    "numpy>=2.2.0",
+    "opencv-python>=4.10.0",
+    "scipy>=1.15.0",
+    "tqdm==4.67.1",
+]
+
+[project.urls]
+Paper = "https://openreview.net/forum?id=gKunvq63KY"
+Homepage = "https://absolutecinema.absolutedegradation.workers.dev"
+Repository = "https://github.com/TytanMikJas/AbsoluteDegradation"
+Datasets = "https://www.kaggle.com/absolutedegradation/datasets"
+
+[dependency-groups]
+dev = [
+    "pre-commit==4.3.0",
+    "ruff==0.14.2",
+]
+
+[tool.setuptools]
+packages = [
+    "absolute_degradation",
+    "absolute_degradation.distortions",
+    "absolute_degradation.distortions.steps",
+    "absolute_degradation.scratches",
+    "absolute_degradation.textures",
+    "absolute_degradation.textures.blending",
+    "absolute_degradation.textures.preprocessing",
+    "absolute_degradation.utils",
+]
+
+[tool.ruff]
+line-length = 88
+lint.select = ["E", "F", "W", "I"]
+lint.ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["absolute_degradation"]
