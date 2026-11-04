@@ -1,0 +1,7 @@
+* text=auto
+*.png binary
+*.gif binary
+*.webp binary
+*.jpg binary
+*.pdf binary
+*.npy binary

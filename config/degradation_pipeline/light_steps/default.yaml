@@ -1,0 +1,47 @@
+_target_: absolute_degradation.distortions.steps.ComposeDistortStep
+
+distortions:
+  - _target_: absolute_degradation.distortions.steps.CropStep
+    crop_h: ${crop_h}
+    crop_w: ${crop_w}
+
+
+
+  - ${artifacts_common}
+  - ${negative_film_distortions}
+  - _target_: absolute_degradation.distortions.steps.ComposeDistortStep
+    permute: true
+
+    distortions:
+      - _target_: absolute_degradation.distortions.steps.FixedBlurDistortStep
+        kernel_size_bounds: [1, 3]
+
+      - _target_: absolute_degradation.distortions.steps.FilmGrainStep
+        noise_std_bounds:
+          - ${div:5, 255}
+          - ${div:6, 255}
+        iso_range: [0.02, 0.075]
+        grain_size_range: [1.0, 1.3]
+        scanner_noise_sigma_range: [0.005, 0.01]
+
+      - _target_: absolute_degradation.distortions.steps.JpegStep
+        quality_center_bounds: [70, 100]
+
+      - _target_: absolute_degradation.distortions.steps.DownsampleStep
+        down_scale_factor_bounds: [0.5, 0.9]
+        up_scale_factor_bounds: [1, 1.5]
+
+      - _target_: absolute_degradation.distortions.steps.GammaCorrectionStep
+
+      - _target_: absolute_degradation.distortions.steps.XAxisMotionStep
+        padding: ${x_motion_padding}
+        sigma_bounds: [0, 0.7]
+
+      - _target_: absolute_degradation.distortions.steps.YAxisMotionStep
+        padding: ${y_motion_padding}
+        sigma_bounds: [0, 12]
+
+  - ${pipeline_tail[0]}
+  - ${pipeline_tail[1]}
+  - ${pipeline_tail[2]}
+  - ${pipeline_tail[3]}
